@@ -36,7 +36,7 @@ class HourlyWorker(Employee):
         return pay
 
     def describe_employee(self):
-        desc = f"works on a contract of {self.numHours} hours at {self.wage}/hour."
+        desc = f"works on a contract of {self.numHours} hours at {self.wage}/hour"
 
         if self.bonus is not None:
             desc += f" and receives a bonus commission of {self.bonus}."
@@ -65,7 +65,7 @@ class SalaryWorker(Employee):
         return pay
 
     def describe_employee(self):
-        desc = f"works on a monthly salary of {self.salary}."
+        desc = f"works on a monthly salary of {self.salary}"
 
         if self.bonus is not None:
             desc += f" and receives a bonus commission of {self.bonus}."
